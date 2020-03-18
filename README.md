@@ -1,5 +1,6 @@
-# openhack-gitops
+# SREK8gitops
 
+** This repo is the IaC which deploys SRE tools and applications for Chaos engineering and self healing demo**
 **Pre-requisite**
 * K8s Cluster
 * Ingress router [for DevOps application ngix router will be used]
