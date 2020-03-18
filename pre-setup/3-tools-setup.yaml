@@ -11,9 +11,9 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/naveenkumarsp/openhack-gitops.git
+    repoURL: https://github.com/naveenkumarsp/srek8gitops.git
     targetRevision: HEAD
-    path: gitops-k8sbootstrap/argoapps/prod
+    path: k8sbootstrap/argoapps/katacoda
 
   # Destination cluster and namespace to deploy the application
   destination:

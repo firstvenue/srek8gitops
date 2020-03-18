@@ -7,19 +7,19 @@ metadata:
 
 spec:
   # The project the application belongs to.
-  project: default
+  project: demo
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/naveenkumarsp/openhack-gitops.git
+    repoURL: https://github.com/naveenkumarsp/srek8gitops.git
     targetRevision: HEAD
     path: applications/argoapps
 
   # Destination cluster and namespace to deploy the application
   destination:
     server: https://kubernetes.default.svc
-    namespace: default
-    
+    namespace: demo
+
   syncPolicy:
     automated:
       prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
