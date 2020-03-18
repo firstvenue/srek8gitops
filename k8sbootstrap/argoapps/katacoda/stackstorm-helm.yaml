@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: 'https://helm.stackstorm.com/'
     targetRevision: 0.24.0
-    chart: stackstorm/stackstorm-ha
+    chart: stackstorm-ha
     helm:
         valueFiles: 
         - https://raw.githubusercontent.com/naveenkumarsp/srek8gitops/master/k8sbootstrap/sretools/stackstorm/katakoda-stackstrom-values.yaml
