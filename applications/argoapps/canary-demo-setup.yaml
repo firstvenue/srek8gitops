@@ -11,7 +11,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/naveenkumarsp/openhack-gitops.git
+    repoURL: https://github.com/naveenkumarsp/srek8gitops.git
     targetRevision: HEAD
     path: applications/rollouts-demo-deployment
 

@@ -11,7 +11,7 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: https://github.com/naveenkumarsp/openhack-gitops.git
+    repoURL: https://github.com/naveenkumarsp/srek8gitops.git
     targetRevision: HEAD
     path: applications/istio-demo/hello-ingress
 
@@ -19,3 +19,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: istio-demo
+  
+  syncPolicy:
+    automated:
+      prune: true # Specifies if resources should be pruned during auto-syncing ( false by default ).
+      selfHeal: true # Specifies if partial app sync should be executed when resources are changed only in target Kubernetes cluster and no git change detected ( false by default ).
+    validate: true # Validate resources before applying to k8s, defaults to true.
