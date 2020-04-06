@@ -15,7 +15,7 @@ spec:
     chart: jenkins
     helm:
         valueFiles:
-        - https://raw.githubusercontent.com/naveenkumarsp/srek8gitops/master/k8sbootstrap/sretools/jenkins/katacoda-jenkins-values.yaml
+        - https://raw.githubusercontent.com/naveenkumarsp/srek8gitops/master/k8sbootstrap/sretools/jenkins/prod-jenkins-values.yaml
 
   # Destination cluster and namespace to deploy the application
   destination:

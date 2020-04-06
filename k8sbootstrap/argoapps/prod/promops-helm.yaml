@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: stackstorm
+  name: promops
   # You'll usually want to add your resources to the argocd namespace.
   namespace: argocd
 spec:
@@ -10,12 +10,12 @@ spec:
 
   # Source of the application manifests
   source:
-    repoURL: 'https://helm.stackstorm.com/'
-    targetRevision: 0.24.0
-    chart: stackstorm-ha
+    repoURL: 'https://kubernetes-charts.storage.googleapis.com'
+    targetRevision: 8.12.2
+    chart: prometheus-operator
     helm:
         valueFiles: 
-        - https://raw.githubusercontent.com/naveenkumarsp/srek8gitops/master/k8sbootstrap/sretools/stackstorm/katakoda-stackstrom-values.yaml
+        - https://raw.githubusercontent.com/naveenkumarsp/srek8gitops/master/k8sbootstrap/sretools/prometheus-operator/prod-promops-values.yaml
 
   # Destination cluster and namespace to deploy the application
   destination:
