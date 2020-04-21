@@ -15,7 +15,12 @@ spec:
   destinations:
   - namespace: tools
     server: https://kubernetes.default.svc
-
+  - namespace: default
+    server: https://kubernetes.default.svc
+  - namespace: argocd
+    server: https://kubernetes.default.svc
+  - namespace: istio-system
+    server: https://kubernetes.default.svc
   # Allow all namespaced-scoped resources to be created, except for ResourceQuota, LimitRange, NetworkPolicy
   namespaceResourceBlacklist:
   - group: ''
@@ -68,7 +73,12 @@ spec:
   destinations:
   - namespace: demo
     server: https://kubernetes.default.svc
-
+  - namespace: default
+    server: https://kubernetes.default.svc
+  - namespace: argocd
+    server: https://kubernetes.default.svc
+  - namespace: istio-demo
+    server: https://kubernetes.default.svc
   # Deny all cluster-scoped resources from being created, except for Namespace
   clusterResourceWhitelist:
   - group: ''
