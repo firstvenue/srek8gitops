@@ -641,13 +641,15 @@ metadata:
   creationTimestamp: null
   name: front-end-v1
   labels:
-    name: front-end-v1
+    name: front-end
+    version: v1
 spec:
   replicas: 1
   strategy: {}
   selector:
     matchLabels:
-      name: front-end-v1
+      name: front-end
+      version: v1
   template:
     metadata:
       annotations:
