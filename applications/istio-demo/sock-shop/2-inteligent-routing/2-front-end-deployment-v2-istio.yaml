@@ -1,11 +1,19 @@
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
   name: front-end-v2
+  labels:
+    name: front-end
+    version: v2
+    app.kubernetes.io/instance: istio-sockshop
 spec:
   replicas: 1
   strategy: {}
+  selector:
+    matchLabels:
+      name: front-end
+      version: v2
   template:
     metadata:
       annotations:

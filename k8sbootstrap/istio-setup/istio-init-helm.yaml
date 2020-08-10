@@ -11,7 +11,7 @@ spec:
   # Source of the application manifests
   source:
     repoURL: 'https://storage.googleapis.com/istio-release/releases/1.4.3/charts/'
-    targetRevision: 1.4.3
+    targetRevision: 1.5.2
     chart: istio-init
 
   # Destination cluster and namespace to deploy the application
